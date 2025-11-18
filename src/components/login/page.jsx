@@ -9,6 +9,10 @@ function Login() {
     const [password, setPassword] = useState('');
     const [emailError, setEmailError] = useState('');
 
+    useEffect(() => {
+        import('bootstrap/dist/js/bootstrap.bundle.min.js');
+    }, []);
+
     const validateEmail = (email) => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!email) {
@@ -36,11 +40,6 @@ function Login() {
             console.log('Validatsiyada xatolik bor.');
         }
     };
-
-    // Agar Bootstrap JS kerak bo‘lsa:
-    useEffect(() => {
-        import('bootstrap/dist/js/bootstrap.bundle.min.js');
-    }, []);
 
     return (
         <div className="container d-flex flex-column align-items-center justify-content-center min-vh-100">

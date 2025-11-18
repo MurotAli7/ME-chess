@@ -5,20 +5,17 @@ import '../../styles/style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-function Register(){
-
+function Register() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [emailError, setEmailError] = useState('');
 
-    // Bootstrap JS faqat clientda ishlash uchun
     useEffect(() => {
         import('bootstrap/dist/js/bootstrap.bundle.min.js');
     }, []);
 
     const validateEmail = (email) => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
         if (!email) {
             setEmailError('Email manzil kiritilishi shart.');
             return false;
@@ -26,7 +23,6 @@ function Register(){
             setEmailError('Iltimos, yaroqli email manzil kiriting.');
             return false;
         }
-
         setEmailError('');
         return true;
     };
@@ -39,7 +35,6 @@ function Register(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         if (validateEmail(email)) {
             console.log("Jo'natilmoqda:", { email, password });
         } else {
@@ -47,7 +42,7 @@ function Register(){
         }
     };
 
-    return(
+    return (
         <div className="register-container">
             <div className="register">
                 <form className="login-form" onSubmit={handleSubmit}>
