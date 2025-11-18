@@ -1,12 +1,12 @@
 'use client'
 
 function Header() {
-    return(
+    return (
         <div className="container">
             <div className="header">
                 <div className="header-logo">
-                    <img src="./M1.jpg" alt="" className="logo" />
-                    <h1 className="header-title">ME<br/>Chess Cup</h1>
+                    <img src="/M1.jpg" alt="logo" className="logo" />
+                    <h1 className="header-title">ME<br />Chess Cup</h1>
                 </div>
                 <div className="header-link-box">
                     <a href="/" className="header-link">Home</a>
@@ -18,7 +18,7 @@ function Header() {
                     <button className="header-btn">Send ME</button>
                     <button className="header-btn">Contact us</button>
                     <div className="header-profil-img-box">
-                        <img src="./images.png" alt="" className="profil-img" />
+                        <img src="/images.png" alt="profile" className="profil-img" />
                     </div>
                 </div>
             </div>
