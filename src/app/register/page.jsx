@@ -1,9 +1,8 @@
 'use client'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import '../../styles/style.css'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Register(){
@@ -11,6 +10,11 @@ function Register(){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [emailError, setEmailError] = useState('');
+
+    // Bootstrap JS faqat clientda ishlash uchun
+    useEffect(() => {
+        import('bootstrap/dist/js/bootstrap.bundle.min.js');
+    }, []);
 
     const validateEmail = (email) => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
