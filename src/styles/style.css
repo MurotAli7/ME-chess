@@ -1,0 +1,392 @@
+@charset "UTF-8";
+.container {
+  max-width: 100vw;
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #000;
+}
+
+.header {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  box-shadow: 0.05px 0.05px 10px 1px green;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  box-shadow: 0.05px 0.05px 5px 1px green;
+}
+
+.header-title {
+  color: black;
+  text-shadow: 1px 1px 1px green;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header-link-box {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.header-link {
+  color: #000;
+  text-shadow: 1px 1px 1px green;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-link:active {
+  text-shadow: 1px 1px 1px red;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-btn {
+  width: 120px;
+  height: 41px;
+  background-color: #000;
+  border-radius: 12px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px green;
+  box-shadow: 1px 1px 1px 1px green;
+}
+
+.header-btn:active {
+  box-shadow: 1.5px 1.5px 1.5px 1.5px red;
+  text-shadow: 1px 1px 1px red;
+}
+
+.header-profil-img-box {
+  width: 70px;
+  height: 70px;
+}
+
+.profil-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  box-shadow: 0.05px 0.05px 5px 1px green;
+}
+
+/* 📱 380px uchun RESPONSIVE VIEW */
+@media (max-width: 380px) {
+  /* logo, title, buttons, profil rasm yashiriladi */
+  .header-logo,
+  .header-box {
+    display: none;
+  }
+  .header {
+    height: 65px;
+    justify-content: center;
+  }
+  /* faqat linklar markazda qoladi */
+  .header-link-box {
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  .header-link {
+    font-size: 16px;
+    color: #00ff00;
+    text-shadow: 1px 1px 1px #003300;
+  }
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0.05px 0.05px 10px 1px green;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-header-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-text {
+  color: rgb(1, 42, 1);
+  text-shadow: 1px 1px 1px green;
+  font-size: 22px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.email-input,
+.password-input {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  color: green;
+  text-shadow: 1px 1px 1px green;
+  box-shadow: 0.05px 0.05px 10px 1px green;
+}
+
+.email-input input,
+.password-input input {
+  width: 100%;
+  height: 41px;
+  padding-right: 35px;
+  padding-left: 10px;
+  border: 1px solid green;
+  border-radius: 10px;
+}
+
+.email-input:hover {
+  box-shadow: 0.05px 0.05px 10px 1px red;
+  border: 1px solid red;
+  color: red;
+}
+
+.password-input:hover {
+  box-shadow: 0.05px 0.05px 10px 1px red;
+  border: 1px solid red;
+  color: red;
+}
+
+.email-input:active {
+  box-shadow: 0.05px 0.05px 10px 1px red;
+  border: 1px solid red;
+  color: red;
+}
+
+.password-input:active {
+  box-shadow: 0.05px 0.05px 10px 1px red;
+  border: 1px solid red;
+  color: red;
+}
+
+.email-input i,
+.password-input i {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+  cursor: pointer;
+}
+
+.login-btn {
+  width: 100%;
+  height: 41px;
+  background-color: #000;
+  border-radius: 12px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px green;
+  box-shadow: 1px 1px 1px 1px green;
+}
+
+.login-btn:active {
+  box-shadow: 1.5px 1.5px 1.5px red;
+  text-shadow: 1px 1px 1px red;
+  color: #000;
+}
+
+.login-link {
+  color: #000;
+  text-shadow: 1px 1px 1px green;
+  text-decoration: none;
+}
+
+.login-link:active {
+  color: bllack;
+  text-shadow: 1px 1px 1px red;
+}
+
+.login-text-or {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.login-error-text {
+  color: #dc3545;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .login-img {
+    display: block;
+    width: 40%;
+    max-width: 400px;
+  }
+  .login {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .login-form {
+    width: 60%;
+  }
+  .login-header-box {
+    align-items: flex-start;
+  }
+  .login-text {
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .login {
+    gap: 60px;
+  }
+  .login-img {
+    max-width: 500px;
+  }
+}
+/* Register umumiy konteyner */
+.register-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 15px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Register kartasi */
+.register {
+  width: 400px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px 1px green;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+/* Form */
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Sarlavha */
+.login-text {
+  text-align: center;
+  color: #00ff00;
+  text-shadow: 1px 1px 2px green;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Input qutisi */
+.input-box {
+  position: relative;
+  width: 100%;
+}
+
+.input-box input {
+  width: 100%;
+  height: 45px;
+  padding-left: 40px;
+  border-radius: 10px;
+  border: 1px solid green;
+  background: #000;
+  color: white;
+}
+
+.input-box i {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: green;
+  font-size: 18px;
+}
+
+/* Error text */
+.login-error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  height: 45px;
+  background-color: #000;
+  border-radius: 10px;
+  border: 1px solid green;
+  color: #00ff00;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 1px green;
+}
+
+.login-btn:active {
+  box-shadow: 1px 1px 5px 1px red;
+  color: red;
+  border: red;
+}
+
+/* 📱 RESPONSIVE: kichik ekranlar uchun */
+@media (max-width: 480px) {
+  .register {
+    width: 95%;
+    padding: 15px;
+  }
+  .login-text {
+    font-size: 22px;
+  }
+  .input-box input {
+    height: 42px;
+    font-size: 15px;
+  }
+  .login-btn {
+    height: 42px;
+    font-size: 16px;
+  }
+}
+.register-link {
+  color: #000;
+  text-shadow: 1px 1px 1px green;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

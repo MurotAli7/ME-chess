@@ -1,0 +1,184 @@
+.login {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0.05px 0.05px 10px 1px green;
+
+}
+
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px; 
+    
+}
+
+.login-header-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.login-text {
+    color: rgb(1, 42, 1);
+    text-shadow: 1px 1px 1px green;
+    font-size: 22px;
+    font-weight: bold;
+    align-items: center;
+
+}
+
+
+.email-input,
+.password-input {
+    position: relative;
+    width: 100%; 
+    background-color: black;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    color: green;
+    text-shadow: 1px 1px 1px green;
+    box-shadow: 0.05px 0.05px 10px 1px green;
+
+}
+
+.email-input input,
+.password-input input {
+    width: 100%;
+    height: 41px;
+    padding-right: 35px; 
+    padding-left: 10px;
+    border: 1px solid green; 
+    border-radius: 10px;
+}
+
+.email-input:hover{
+    box-shadow: 0.05px 0.05px 10px 1px red;
+    border: 1px solid red;
+    color: red;
+
+}
+.password-input:hover{
+    box-shadow: 0.05px 0.05px 10px 1px red;
+    border: 1px solid red;
+    color: red;
+}
+
+.email-input:active{
+    box-shadow: 0.05px 0.05px 10px 1px red;
+    border: 1px solid red;
+    color: red;
+
+}
+
+.password-input:active{
+    box-shadow: 0.05px 0.05px 10px 1px red;
+    border: 1px solid red;
+    color: red;
+
+}
+
+
+
+
+.email-input i,
+.password-input i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 100%; 
+    height: 41px;
+    background-color: #000;
+    border-radius: 12px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px green;
+    box-shadow: 1px 1px 1px 1px green;
+}
+.login-btn:active{
+    box-shadow:  1.5px 1.5px 1.5px red;
+    text-shadow: 1px 1px 1px red;
+    color: #000;
+}
+
+
+.login-link{
+    color: #000;
+    text-shadow: 1px 1px 1px green;
+    text-decoration: none;
+}
+
+.login-link:active{
+    color: bllack;
+    text-shadow: 1px 1px 1px red;
+}
+
+.login-text-or {
+    text-align: center;
+    margin: 15px 0;
+}
+
+
+.login-error-text {
+    color: #dc3545; 
+    font-size: 14px;
+    width: 100%;
+    text-align: left; 
+    margin-top: -5px; 
+    margin-bottom: 5px;
+}
+
+
+
+@media (min-width: 768px) {
+    .login-img {
+        display: block; 
+        width: 40%;
+        max-width: 400px;
+    }
+    
+    .login {
+        flex-direction: row;
+        gap: 40px; 
+    }
+
+    .login-form {
+        width: 60%; 
+    }
+
+    .login-header-box {
+        align-items: flex-start; 
+    }
+    
+    .login-text {
+        text-align: left; 
+    }
+} 
+
+
+@media (min-width: 992px) {
+    .login {
+        gap: 60px; 
+    }
+    
+    .login-img {
+        max-width: 500px; 
+    }
+}

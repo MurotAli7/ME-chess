@@ -1,0 +1,118 @@
+/* Register umumiy konteyner */
+.register-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 15px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Register kartasi */
+.register {
+    width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 1px green;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+/* Form */
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Sarlavha */
+.login-text {
+    text-align: center;
+    color: #00ff00;
+    text-shadow: 1px 1px 2px green;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Input qutisi */
+.input-box {
+    position: relative;
+    width: 100%;
+}
+
+.input-box input {
+    width: 100%;
+    height: 45px;
+    padding-left: 40px;
+    border-radius: 10px;
+    border: 1px solid green;
+    background: #000;
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: green;
+    font-size: 18px;
+}
+
+/* Error text */
+.login-error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+/* Button */
+.login-btn {
+    width: 100%;
+    height: 45px;
+    background-color: #000;
+    border-radius: 10px;
+    border: 1px solid green;
+    color: #00ff00;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 1px green;
+}
+
+.login-btn:active {
+    box-shadow: 1px 1px 5px 1px red;
+    color: red;
+    border: red;
+}
+
+/* 📱 RESPONSIVE: kichik ekranlar uchun */
+@media (max-width: 480px) {
+
+    .register {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .login-text {
+        font-size: 22px;
+    }
+
+    .input-box input {
+        height: 42px;
+        font-size: 15px;
+    }
+
+    .login-btn {
+        height: 42px;
+        font-size: 16px;
+    }
+}
+
+
+.register-link{
+    color: #000;
+    text-shadow: 1px 1px 1px green;
+    text-decoration: none;
+}
