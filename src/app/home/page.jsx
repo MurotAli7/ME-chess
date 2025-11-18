@@ -1,9 +1,6 @@
 'use client'
 
 
-
-
-
 import Header from "@/components/header/page";
 import Login from "../../components/login/page";
 
