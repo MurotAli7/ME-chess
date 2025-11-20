@@ -29,13 +29,11 @@
     align-items: center; 
 }
 
-.login-text {
-    color: rgb(1, 42, 1);
+.login-text{
+    color: black;
     text-shadow: 1px 1px 1px green;
     font-size: 22px;
     font-weight: bold;
-    align-items: center;
-
 }
 
 
@@ -130,10 +128,7 @@
     text-shadow: 1px 1px 1px red;
 }
 
-.login-text-or {
-    text-align: center;
-    margin: 15px 0;
-}
+
 
 
 .login-error-text {

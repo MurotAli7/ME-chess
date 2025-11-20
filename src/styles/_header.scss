@@ -27,9 +27,10 @@
 }
 
 .logo{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
+    padding: 3px;
     box-shadow: 0.05px 0.05px 5px 1px green;
 }
 
@@ -117,7 +118,7 @@
 
     .header-link{
         font-size: 16px;
-        color: #00ff00;
-        text-shadow: 1px 1px 1px #003300;
+        color: #000;
+        text-shadow: 1px 1px 1px green;
     }
 }

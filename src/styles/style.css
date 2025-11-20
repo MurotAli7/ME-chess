@@ -112,8 +112,8 @@
   }
   .header-link {
     font-size: 16px;
-    color: #00ff00;
-    text-shadow: 1px 1px 1px #003300;
+    color: #000;
+    text-shadow: 1px 1px 1px green;
   }
 }
 .login {
@@ -144,11 +144,10 @@
 }
 
 .login-text {
-  color: rgb(1, 42, 1);
+  color: black;
   text-shadow: 1px 1px 1px green;
   font-size: 22px;
   font-weight: bold;
-  align-items: center;
 }
 
 .email-input,
@@ -236,11 +235,6 @@
   text-shadow: 1px 1px 1px red;
 }
 
-.login-text-or {
-  text-align: center;
-  margin: 15px 0;
-}
-
 .login-error-text {
   color: #dc3545;
   font-size: 14px;
@@ -311,7 +305,7 @@
 /* Sarlavha */
 .login-text {
   text-align: center;
-  color: #00ff00;
+  color: #000;
   text-shadow: 1px 1px 2px green;
   font-size: 28px;
   margin-bottom: 10px;
@@ -355,7 +349,7 @@
   background-color: #000;
   border-radius: 10px;
   border: 1px solid green;
-  color: #00ff00;
+  color: #000;
   font-weight: bold;
   cursor: pointer;
   box-shadow: 1px 1px 5px 1px green;
@@ -389,4 +383,80 @@
   color: #000;
   text-shadow: 1px 1px 1px green;
   text-decoration: none;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 450px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.home-box {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px 1px green;
+  background-color: #000;
+}
+@media screen and (max-width: 450px) {
+  .home-box {
+    width: 60%;
+  }
+}
+
+.home-btn-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.home-title {
+  text-align: center;
+  color: #000;
+  text-shadow: 1px 1px 2px green;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.home-btn {
+  width: 30%;
+  height: 30px;
+  background-color: #000;
+  border-radius: 5px;
+  border: 1px solid green;
+  color: #000;
+  text-shadow: 1px 1px 2px green;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 1px green;
+}
+
+.home-btn:active {
+  box-shadow: 1px 1px 5px 1px red;
+  color: #000;
+  text-shadow: 1px 1px 2px red;
+  border: red;
 }/*# sourceMappingURL=style.css.map */
