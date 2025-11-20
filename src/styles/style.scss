@@ -1,4 +1,4 @@
-@import "_header.scss";
-@import "_login.scss";
-@import "_register.scss";
-@import "_home.scss";
+@use "header" as*;
+@use "login" as*;
+@use "register" as*;
+@use "home" as*;

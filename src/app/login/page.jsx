@@ -42,7 +42,7 @@ function Login() {
     };
 
     return (
-        <div className="container d-flex flex-column align-items-center justify-content-center min-vh-100">
+        <div className="container">
             <div className="login">
                 <form className="login-form" onSubmit={handleSubmit}>
                     <h1 className="login-text">ME CHESS</h1>
